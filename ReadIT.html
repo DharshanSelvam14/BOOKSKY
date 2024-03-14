@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadIT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>ReadIT</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Book Name</h2>
+            <h3>Author Name</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam quaerat sit ducimus molestias aliquid deserunt. Illum numquam quaerat molestiae.</p>
+            <button onclick="deleteit()" id="deletebutton">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+
+    <div class="popupbox">
+        <h2>Add Book</h2>
+        <form>
+            <input placeholder="Book Title" type="text" id="book-title">
+            <input placeholder="Book Author" type="text" id="book-author">
+            <textarea placeholder="Short Description" id="description"></textarea>
+            <button id="addbook">Add</button>
+            <button id="cancelbook">Cancel</button>
+        </form>
+    </div>
+
+    <button class="addbutton" id="add-popup">+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
